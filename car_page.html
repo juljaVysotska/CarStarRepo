@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CarStar</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="container">
+		<a href="#" class="logo">CarStar</a>
+		<!-- Что бы открыть lang__picker нужно добавить класс open -->
+		<div class="lang lang__picker">
+			<p class="lang--actual">РУ <img class="arrow" src="img/icon/arrow.svg" alt=""></p>
+			
+			<ul class="lang__list">
+				<li><a href="#">УКР</a></li>
+				<li><a href="#">ENG</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="container car__info__block">
+
+		<div class="car_gallery">
+			<div class="car_gallery_for">
+				<img src="img/photo@3x.jpg" class="main__gallery__photo" alt="">
+			</div>
+			<div class="car_gallery_nav">
+				<div class="car_gallery_nav__item">
+					<img src="img/photo@3x.jpg" class="main__photo" alt="">
+				</div>
+				<div class="car_gallery_nav__item">
+					<img src="img/photo@3x.jpg" class="main__photo" alt="">
+				</div>
+				<div class="car_gallery_nav__item active">
+					<img src="img/photo@3x.jpg" class="main__photo" alt="">
+				</div>
+				<div class="car_gallery_nav__item">
+					<img src="img/photo@3x.jpg" class="main__photo" alt="">
+				</div>
+				<div class="car_gallery_nav__item">
+					<img src="img/photo@3x.jpg" class="main__photo" alt="">
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="car__info">
+			<div class="car__info__title">
+				<h2 class="car__name">Nissan Sentra</h2>
+				<p class="car__city">Киев</p>
+			</div>
+			<div class="car__info__date">
+				<div class="car__info__item">
+					<p class="legend">Забрать</p>
+					<p class="data"><span class="day">09 Дек</span><span class="time">10:00</span></p>
+				</div>
+				<div class="car__info__item">
+					<p class="legend">Вернуть</p>
+					<p class="data"><span class="day">09 Дек</span><span class="time">10:00</span></p>
+				</div>
+			</div>
+
+			<div class="car__info__params">
+				<div class="car__info__item">
+					<p class="legend">Коробка передач</p>
+					<p class="data">Автомат</p>
+				</div>
+				<div class="car__info__item">
+					<p class="legend">Количество пасс.</p>
+					<p class="data">5</p>
+				</div>
+				<div class="car__info__item">
+					<p class="legend">Место для багажа</p>
+					<p class="data">2+1</p>
+				</div>
+				<div class="car__info__item">
+					<p class="legend">Кондиционер</p>
+					<p class="data"> Да</p>
+				</div>
+				<div class="car__info__item">
+					<p class="legend">Детское кресло</p>
+					
+					<label for="childSeat" class="checkbox">
+						<input type="checkbox" id="childSeat">
+						<span class="checkmark"></span>
+
+					</label>
+				</div>
+				
+			</div>
+			<div class="car__info__price">
+				<div>
+					<p class="price">2 263 грн</p>
+					<p class="price__descr">Цена за период аренды</p>
+				</div>
+
+				<a href="#" class="btn__select">Оформить заказ</a>
+			</div>
+		</div>
+		
+	</section>
+	<section class="container warranty__section">
+		<h2 class="section__title">Наши гарантии</h2>
+
+		<div class="card__layout">
+			<div class="warranty warranty__card">
+				<div class="warranty__icon">
+					<img src="img/icon/icons-doc.svg" alt="">
+				</div>
+
+				<p class="warranty__text">Страховка КАСКО, ОСАГО</p>
+			</div>
+			<div class="warranty warranty__card">
+				<div class="warranty__icon">
+					<img src="img/icon/icons-service.svg" alt="">
+				</div>
+				<p class="warranty__text">Техническое обслуживание каждые 15к км</p>
+
+			</div>
+			<div class="warranty warranty__card">
+				<div class="warranty__icon">
+					<img src="img/icon/icons-calendar.svg" alt="">
+				</div>
+				<p class="warranty__text">Сезонная резина</p>
+
+			</div>
+		</div>
+		
+	</section>
+
+	<section class="container feedback__section">
+		<h2 class="section__title">Есть вопросы? Напишите нам</h2>
+
+		<div class="form__wrapp user__form">
+			<form action="" method="">
+				<label for="username">Имя</label>
+				<input type="text" id="username" placeholder="Имя" class="gap--bottom">
+
+
+				<label for="phoneNumber">Мобильный телефон</label>
+				<input type="text" id="phoneNumber" placeholder="+38012345678" class="gap--bottom">
+
+
+				<label for="message">Сообщение</label>
+				<textarea id="message" placeholder="Оставить комментарий для драйвера"></textarea>
+
+				<input type="submit" value="Отправить">
+			</form>
+		</div>
+		
+	</section>
+
+	<footer class="container">
+		<p>©2020 CarStar</p>
+	</footer>
+</body>
+</html>
