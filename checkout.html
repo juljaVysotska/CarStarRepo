@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CarStar</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="container">
+		<a href="#" class="logo">CarStar</a>
+		<!-- Что бы открыть lang__picker нужно добавить класс open -->
+		<div class="lang lang__picker">
+			<p class="lang--actual">РУ <img class="arrow" src="img/icon/arrow.svg" alt=""></p>
+			
+			<ul class="lang__list">
+				<li><a href="#">УКР</a></li>
+				<li><a href="#">ENG</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="container checkout__section">
+		<h2 class="section__title">Оформление заказа</h2>
+
+		<div class="tab__navigation">
+		<!-- Что бы подсветить нужный таб необходимо добавить класс active -->
+			<ul>
+				<li class="active">
+					<img src="img/icon/icons-data.svg" alt="">Ваши контактные данные
+				</li>
+				<li>
+					<img src="img/icon/icons-details.svg" alt="">Детали заказа
+				</li>
+				<li>
+					<img src="img/icon/icons-card.svg" alt="">Оплата
+				</li>
+			</ul>
+		</div>
+
+		<!-- Что бы увидеть нужную панель необходимо добавить класс show -->
+		<div class="tab__blocks">
+			<div class="tab__pane contact__data user__form show">
+				<form action="" method="">
+					<fieldset class="w-400">
+						<label for="userSurname">Фамилия</label>
+						<input type="text" id="userSurname" placeholder="Фамилия" class="gap--bottom">
+
+						<label for="username">Имя</label>
+						<input type="text" id="username" placeholder="Имя" class="gap--bottom w-400">
+
+
+						<label for="phoneNumber">Мобильный телефон</label>
+						<input type="text" id="phoneNumber" placeholder="+38012345678" class="gap--bottom">
+					</fieldset>
+
+					<hr>
+
+					<fieldset class="w-400">
+						<h3 class="subtitle">
+							Куда подать авто?
+						</h3>
+						<label for="area">Район</label>
+						<input type="text" id="area" placeholder="Район" class="gap--bottom">
+
+						<!-- Что бы убрать ошибку нужно удалить у инпута клаа error__border -->
+						<label for="street">Улица</label>
+						<input type="text" id="street" placeholder="Улица" class="error__border gap--bottom">
+						<p class="error gap--bottom">Поле не может быть пустым</p>
+						
+						
+
+						<label for="message">Сообщение</label>
+						<textarea id="message" placeholder="Оставить комментарий для драйвера"></textarea>
+					</fieldset>
+
+					<button class="outline" href="#">Дальше</button>
+
+				</form>
+			</div>
+			<div class="tab__pane order__data ">
+				<div class="car__info">
+					<div class="car__info__title">
+						<h2 class="car__name">Nissan Sentra</h2>
+						<p class="car__city">Киев</p>
+					</div>
+					<div class="car__info__date">
+						<div class="car__info__item">
+							<p class="legend">Забрать</p>
+							<p class="data"><span class="day">09 Дек</span><span class="time">10:00</span></p>
+						</div>
+						<div class="car__info__item">
+							<p class="legend">Вернуть</p>
+							<p class="data"><span class="day">09 Дек</span><span class="time">10:00</span></p>
+						</div>
+					</div>
+					<div class="car__info__params">
+						<div class="car__info__item">
+							<p class="legend">Адресс подачи</p>
+							<p class="data">Деснянский р-н, Михаила Грушевского, 5</p>
+						</div>
+						<div class="car__info__item">
+							<p class="legend">Комментарий</p>
+							<p class="data">Заезд со стороны Новуса</p>
+						</div>
+					</div>
+
+					<div class="car__info__params">
+						<div class="car__info__item">
+							<p class="legend">Коробка передач</p>
+							<p class="data">Автомат</p>
+						</div>
+						<div class="car__info__item">
+							<p class="legend">Количество пасс.</p>
+							<p class="data">5</p>
+						</div>
+						<div class="car__info__item">
+							<p class="legend">Место для багажа</p>
+							<p class="data">2+1</p>
+						</div>
+						<div class="car__info__item">
+							<p class="legend">Кондиционер</p>
+							<p class="data"> Да</p>
+						</div>
+						<div class="car__info__item">
+							<p class="legend">Детское кресло</p>
+							<p class="data"> Да</p>
+							
+						</div>
+						
+					</div>
+					<div class="car__info__price">
+						<div>
+							<p class="price">2 263 грн</p>
+							<p class="price__descr">Цена за период аренды</p>
+						</div>
+
+					</div>
+				</div>
+
+				<button class="outline" href="#">Дальше</button>
+			</div>
+			<div class="tab__pane payment__data user__form ">
+				<form action="" method="">
+					<fieldset class="w-320">
+						<label for="cardNumber">Номер карты</label>
+						<input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" class="gap--bottom" required="">
+
+						<div class="flex">
+							<div class="w-144">
+								<label for="expirationDate">ММ/ГГ</label>
+								<input type="text" id="expirationDate" placeholder="03/23" class="gap--bottom" required="">
+							
+							</div>
+							<div class="w-144">
+								<label for="cvv">CVV</label>
+								<input type="password" id="cvv" placeholder="cvv" class="gap--bottom" required="">
+							</div>
+							
+						</div>
+
+						<label for="ownerName">Имя владельца карты (опционально)</label>
+						<input type="text" id="ownerName" placeholder="Катерина Иващук" class="gap--bottom">
+					</fieldset>
+
+					
+
+					<button class="outline" href="#">Дальше</button>
+
+				</form>
+			</div>
+		</div>																
+	</section>
+	<footer class="container">
+		<p>©2020 CarStar</p>
+	</footer>
+
+</body>
+</html>
